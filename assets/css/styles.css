@@ -209,3 +209,33 @@ body.dark-mode .theme-switch {
     display: flex;
     gap: 15px;
 }
+
+/* projects.html */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.service-item {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.service-item a {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
